@@ -1,0 +1,542 @@
+--------- beginning of system
+11-21 21:26:58.409 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:27:05.414 E/ActivityThread(18766): Failed to find provider info for com.tencent.mm.coolassist.debugprovider
+11-21 21:27:06.320 E/ActivityThread(18838): Failed to find provider info for com.tencent.mm.coolassist.debugprovider
+11-21 21:27:06.341 E/ActivityThread(18851): Failed to find provider info for com.tencent.mm.coolassist.debugprovider
+11-21 21:27:06.677 E/ActivityThread(18927): Failed to find provider info for com.tencent.mm.coolassist.debugprovider
+11-21 21:27:06.893 E/ActivityThread(18990): Failed to find provider info for com.tencent.mm.coolassist.debugprovider
+--------- beginning of crash
+11-21 21:27:20.043 E/AndroidRuntime(19353): FATAL EXCEPTION: main
+11-21 21:27:20.043 E/AndroidRuntime(19353): Process: com.pumpkinstudy.kind, PID: 19353
+11-21 21:27:20.043 E/AndroidRuntime(19353): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.pumpkinstudy.kind.bean.ActionJSONResult.getResults()' on a null object reference
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at com.pumpkinstudy.kind.activity.LoginActivity$Handler.taskMain(LoginActivity.java:75)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at com.pumpkinstudy.kind.utils.MyHandler.handleMessage(MyHandler.java:29)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at android.os.Looper.loop(Looper.java:220)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at android.app.ActivityThread.main(ActivityThread.java:7424)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at java.lang.reflect.Method.invoke(Native Method)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:500)
+11-21 21:27:20.043 E/AndroidRuntime(19353): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:865)
+11-21 21:27:20.939 E/IPCThreadState(13861): set_thread_freeze_state, freeze=0, pid=13861, num=15
+11-21 21:27:20.939 E/IPCThreadState(13861): remove_unfreezing, pid=13861
+11-21 21:27:20.946 E/        (  895): remove_unfreezing, pid=13861
+11-21 21:27:20.946 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=13861, num=9
+11-21 21:27:21.282 E/ActivityThread(19497): two prestart wait!19497,10921, skipOnCreate=true
+11-21 21:27:54.901 E/IPCThreadState(19497): set_thread_freeze_state, freeze=1, pid=19497, num=14
+11-21 21:27:54.902 E/IPCThreadState(13861): set_thread_freeze_state, freeze=1, pid=13861, num=16
+11-21 21:27:58.412 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:28:08.991 E/ActivityThread(18990): Service com.tencent.mm.service.ProcessService$SandBoxProcessService has leaked IntentReceiver com.tencent.mm.sandbox.updater.UpdaterService$a@fdecf98 that was originally registered here. Are you missing a call to unregisterReceiver()?
+11-21 21:28:08.991 E/ActivityThread(18990): android.app.IntentReceiverLeaked: Service com.tencent.mm.service.ProcessService$SandBoxProcessService has leaked IntentReceiver com.tencent.mm.sandbox.updater.UpdaterService$a@fdecf98 that was originally registered here. Are you missing a call to unregisterReceiver()?
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:1530)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:1233)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1480)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1453)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:1441)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:623)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at com.tencent.mm.sandbox.updater.UpdaterService.onCreate(SourceFile:4113)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at com.tencent.mm.service.MMService.q(SourceFile:153)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at com.tencent.mm.service.CommonProcessService$1$3.run(SourceFile:115)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.os.Handler.handleCallback(Handler.java:873)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.os.Looper.loop(Looper.java:220)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at android.app.ActivityThread.main(ActivityThread.java:7424)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at java.lang.reflect.Method.invoke(Native Method)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:500)
+11-21 21:28:08.991 E/ActivityThread(18990): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:865)
+11-21 21:28:41.902 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=0, pid=6109, num=33
+11-21 21:28:41.902 E/IPCThreadState( 6109): remove_unfreezing, pid=6109
+11-21 21:28:41.905 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=0, pid=5730, num=27
+11-21 21:28:41.905 E/IPCThreadState( 5730): remove_unfreezing, pid=5730
+11-21 21:28:41.908 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=0, pid=6483, num=37
+11-21 21:28:41.908 E/IPCThreadState( 6483): remove_unfreezing, pid=6483
+11-21 21:28:41.934 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=0, pid=5176, num=83
+11-21 21:28:41.934 E/IPCThreadState( 5176): remove_unfreezing, pid=5176
+11-21 21:28:41.937 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=0, pid=5207, num=71
+11-21 21:28:41.937 E/IPCThreadState( 5207): remove_unfreezing, pid=5207
+11-21 21:28:51.864 E/        (  895): remove_unfreezing, pid=5207
+11-21 21:28:51.864 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5207, num=62
+11-21 21:28:51.893 E/        (  895): remove_unfreezing, pid=5176
+11-21 21:28:51.893 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5176, num=71
+11-21 21:28:51.895 E/        (  895): remove_unfreezing, pid=6109
+11-21 21:28:51.895 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6109, num=22
+11-21 21:28:58.509 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:29:21.986 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=1, pid=5730, num=27
+11-21 21:29:21.990 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=1, pid=5207, num=71
+11-21 21:29:49.964 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=0, pid=5207, num=71
+11-21 21:29:49.964 E/IPCThreadState( 5207): remove_unfreezing, pid=5207
+11-21 21:29:49.996 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=0, pid=5730, num=27
+11-21 21:29:49.996 E/IPCThreadState( 5730): remove_unfreezing, pid=5730
+11-21 21:29:51.975 E/        (  895): remove_unfreezing, pid=5207
+11-21 21:29:51.975 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5207, num=62
+11-21 21:29:52.035 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=1, pid=6109, num=33
+11-21 21:29:52.038 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=1, pid=5176, num=83
+11-21 21:29:52.041 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=1, pid=6483, num=37
+11-21 21:29:58.510 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:30:22.060 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=1, pid=5730, num=27
+11-21 21:30:22.062 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=1, pid=5207, num=71
+11-21 21:30:58.513 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:31:58.515 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:32:58.517 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:33:58.519 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:34:58.521 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:35:58.523 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:36:58.525 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:37:58.527 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:38:01.446 E/IPCThreadState( 5542): set_thread_freeze_state, freeze=0, pid=5542, num=19
+11-21 21:38:01.446 E/IPCThreadState( 5542): remove_unfreezing, pid=5542
+11-21 21:38:02.024 E/ActivityThread(19860): Failed to find provider info for com.vivo.push.sdk.service.SystemPushConfig
+11-21 21:38:02.041 E/ActivityThread(19860): Failed to find provider info for com.vivo.push.sdk.service.SystemPushConfig
+11-21 21:38:14.971 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=1, pid=5140, num=59
+11-21 21:38:14.971 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=1, pid=6124, num=52
+11-21 21:38:58.529 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:39:55.231 E/        (  895): freezerd, set_thread_freeze_state, freeze=1, pid=19833, num=5
+11-21 21:39:55.234 E/IPCThreadState(20255): set_thread_freeze_state, freeze=1, pid=20255, num=13
+11-21 21:39:55.238 E/IPCThreadState( 5542): set_thread_freeze_state, freeze=1, pid=5542, num=19
+11-21 21:39:55.244 E/IPCThreadState(20006): set_thread_freeze_state, freeze=1, pid=20006, num=39
+11-21 21:39:55.246 E/IPCThreadState(19833): set_thread_freeze_state, freeze=1, pid=19833, num=44
+11-21 21:39:55.246 E/IPCThreadState(19822): set_thread_freeze_state, freeze=1, pid=19822, num=46
+11-21 21:39:55.248 E/IPCThreadState(19848): set_thread_freeze_state, freeze=1, pid=19848, num=30
+11-21 21:39:55.248 E/IPCThreadState(20031): set_thread_freeze_state, freeze=1, pid=20031, num=36
+11-21 21:39:55.250 E/IPCThreadState(19860): set_thread_freeze_state, freeze=1, pid=19860, num=53
+11-21 21:39:58.530 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:40:58.533 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:41:58.534 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:42:12.315 E/        (  895): remove_unfreezing, pid=13495
+11-21 21:42:12.315 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=13495, num=60
+11-21 21:42:12.339 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=0, pid=6124, num=52
+11-21 21:42:12.339 E/IPCThreadState( 6124): remove_unfreezing, pid=6124
+11-21 21:42:12.342 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=0, pid=5140, num=59
+11-21 21:42:12.342 E/IPCThreadState( 5140): remove_unfreezing, pid=5140
+11-21 21:42:16.668 E/        (  895): remove_unfreezing, pid=6124
+11-21 21:42:16.668 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6124, num=44
+11-21 21:42:16.707 E/        (  895): remove_unfreezing, pid=19848
+11-21 21:42:16.707 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=19848, num=23
+11-21 21:42:16.708 E/        (  895): remove_unfreezing, pid=5542
+11-21 21:42:16.708 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5542, num=13
+11-21 21:42:58.535 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:43:09.038 E/        (  895): remove_unfreezing, pid=13861
+11-21 21:43:09.038 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=13861, num=10
+11-21 21:43:09.108 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=0, pid=5176, num=84
+11-21 21:43:09.108 E/IPCThreadState( 5176): remove_unfreezing, pid=5176
+11-21 21:43:10.175 E/ActivityThread(20522): two prestart wait!20522,10543, skipOnCreate=true
+11-21 21:43:11.167 E/        (  895): remove_unfreezing, pid=6483
+11-21 21:43:11.167 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6483, num=30
+11-21 21:43:11.168 E/        (  895): remove_unfreezing, pid=6109
+11-21 21:43:11.168 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6109, num=22
+11-21 21:43:44.720 E/IPCThreadState(20522): set_thread_freeze_state, freeze=1, pid=20522, num=14
+11-21 21:43:58.537 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:44:46.920 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=1, pid=6483, num=37
+11-21 21:44:46.922 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=1, pid=5176, num=84
+11-21 21:44:46.924 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=1, pid=6109, num=33
+11-21 21:44:58.539 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:45:58.541 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:46:58.543 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:47:58.544 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:48:58.547 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:49:58.548 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:50:58.550 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:51:58.552 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:52:11.854 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=1, pid=5140, num=61
+11-21 21:52:11.855 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=1, pid=6124, num=51
+11-21 21:52:18.338 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=0, pid=6483, num=37
+11-21 21:52:18.338 E/IPCThreadState( 6483): remove_unfreezing, pid=6483
+11-21 21:52:18.339 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=0, pid=6124, num=51
+11-21 21:52:18.339 E/IPCThreadState( 6124): remove_unfreezing, pid=6124
+11-21 21:52:18.340 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=0, pid=5176, num=84
+11-21 21:52:18.340 E/IPCThreadState( 5176): remove_unfreezing, pid=5176
+11-21 21:52:18.341 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=0, pid=5730, num=27
+11-21 21:52:18.341 E/IPCThreadState( 5730): remove_unfreezing, pid=5730
+11-21 21:52:18.345 E/IPCThreadState(19833): set_thread_freeze_state, freeze=0, pid=19833, num=44
+11-21 21:52:18.345 E/IPCThreadState(19833): remove_unfreezing, pid=19833
+11-21 21:52:18.363 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=0, pid=5207, num=71
+11-21 21:52:18.363 E/IPCThreadState( 5207): remove_unfreezing, pid=5207
+11-21 21:52:18.374 E/IPCThreadState(19822): set_thread_freeze_state, freeze=0, pid=19822, num=46
+11-21 21:52:18.374 E/IPCThreadState(19822): remove_unfreezing, pid=19822
+11-21 21:52:18.376 E/IPCThreadState(19860): set_thread_freeze_state, freeze=0, pid=19860, num=54
+11-21 21:52:18.376 E/IPCThreadState(19860): remove_unfreezing, pid=19860
+11-21 21:52:18.378 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=0, pid=6109, num=33
+11-21 21:52:18.378 E/IPCThreadState( 6109): remove_unfreezing, pid=6109
+11-21 21:52:18.387 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=0, pid=5140, num=61
+11-21 21:52:18.387 E/IPCThreadState( 5140): remove_unfreezing, pid=5140
+11-21 21:52:23.827 E/        (  895): remove_unfreezing, pid=6109
+11-21 21:52:23.828 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6109, num=22
+11-21 21:52:23.831 E/        (  895): remove_unfreezing, pid=5176
+11-21 21:52:23.831 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5176, num=71
+11-21 21:52:23.839 E/        (  895): remove_unfreezing, pid=6124
+11-21 21:52:23.839 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6124, num=44
+11-21 21:52:23.853 E/        (  895): remove_unfreezing, pid=5730
+11-21 21:52:23.853 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5730, num=18
+11-21 21:52:23.881 E/        (  895): remove_unfreezing, pid=20255
+11-21 21:52:23.881 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20255, num=7
+11-21 21:52:23.884 E/        (  895): remove_unfreezing, pid=20006
+11-21 21:52:23.884 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20006, num=31
+11-21 21:52:23.885 E/        (  895): remove_unfreezing, pid=20031
+11-21 21:52:23.885 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20031, num=28
+11-21 21:52:23.895 E/        (  895): remove_unfreezing, pid=19833
+11-21 21:52:23.895 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=19833, num=5
+11-21 21:52:53.937 E/        (  895): freezerd, set_thread_freeze_state, freeze=1, pid=19833, num=5
+11-21 21:52:53.937 E/IPCThreadState( 5730): set_thread_freeze_state, freeze=1, pid=5730, num=27
+11-21 21:52:53.940 E/IPCThreadState(19833): set_thread_freeze_state, freeze=1, pid=19833, num=44
+11-21 21:52:53.940 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=1, pid=5140, num=58
+11-21 21:52:53.940 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=1, pid=6124, num=51
+11-21 21:52:53.944 E/IPCThreadState( 5207): set_thread_freeze_state, freeze=1, pid=5207, num=71
+11-21 21:52:58.621 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:53:37.284 E/IPCThreadState(19822): set_thread_freeze_state, freeze=1, pid=19822, num=38
+11-21 21:53:37.285 E/IPCThreadState(20255): set_thread_freeze_state, freeze=1, pid=20255, num=13
+11-21 21:53:37.288 E/IPCThreadState(19860): set_thread_freeze_state, freeze=1, pid=19860, num=44
+11-21 21:53:37.289 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=1, pid=5176, num=87
+11-21 21:53:37.290 E/IPCThreadState(20006): set_thread_freeze_state, freeze=1, pid=20006, num=38
+11-21 21:53:37.291 E/IPCThreadState(20031): set_thread_freeze_state, freeze=1, pid=20031, num=33
+11-21 21:53:37.291 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=1, pid=6483, num=37
+11-21 21:53:37.292 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=1, pid=6109, num=33
+11-21 21:53:58.623 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:54:58.625 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:55:08.699 E/IPCThreadState( 6124): set_thread_freeze_state, freeze=0, pid=6124, num=51
+11-21 21:55:08.699 E/IPCThreadState( 6124): remove_unfreezing, pid=6124
+11-21 21:55:08.704 E/IPCThreadState( 5140): set_thread_freeze_state, freeze=0, pid=5140, num=58
+11-21 21:55:08.704 E/IPCThreadState( 5140): remove_unfreezing, pid=5140
+11-21 21:55:10.343 E/        (  895): remove_unfreezing, pid=13495
+11-21 21:55:10.344 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=13495, num=59
+11-21 21:55:10.421 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=0, pid=6483, num=37
+11-21 21:55:10.422 E/IPCThreadState( 6483): remove_unfreezing, pid=6483
+11-21 21:55:10.444 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=0, pid=5176, num=87
+11-21 21:55:10.444 E/IPCThreadState( 5176): remove_unfreezing, pid=5176
+11-21 21:55:10.450 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=0, pid=6109, num=33
+11-21 21:55:10.450 E/IPCThreadState( 6109): remove_unfreezing, pid=6109
+11-21 21:55:15.977 E/        (  895): remove_unfreezing, pid=6109
+11-21 21:55:15.977 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6109, num=22
+11-21 21:55:15.980 E/        (  895): remove_unfreezing, pid=5176
+11-21 21:55:15.980 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=5176, num=74
+11-21 21:55:15.984 E/        (  895): remove_unfreezing, pid=6124
+11-21 21:55:15.984 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6124, num=44
+11-21 21:55:58.627 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:56:48.235 E/IPCThreadState( 6109): set_thread_freeze_state, freeze=1, pid=6109, num=33
+11-21 21:56:48.240 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=1, pid=5176, num=85
+11-21 21:56:48.241 E/IPCThreadState( 6483): set_thread_freeze_state, freeze=1, pid=6483, num=36
+11-21 21:56:58.629 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:57:58.631 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:58:59.029 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 21:59:59.031 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 22:00:59.031 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 22:01:13.597 E/IPCThreadState(19833): set_thread_freeze_state, freeze=0, pid=19833, num=44
+11-21 22:01:13.597 E/IPCThreadState(19833): remove_unfreezing, pid=19833
+11-21 22:01:13.599 E/IPCThreadState(20031): set_thread_freeze_state, freeze=0, pid=20031, num=33
+11-21 22:01:13.599 E/IPCThreadState(19822): set_thread_freeze_state, freeze=0, pid=19822, num=38
+11-21 22:01:13.599 E/IPCThreadState(20031): remove_unfreezing, pid=20031
+11-21 22:01:13.599 E/IPCThreadState(19822): remove_unfreezing, pid=19822
+11-21 22:01:13.801 E/        (  895): remove_unfreezing, pid=20255
+11-21 22:01:13.801 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20255, num=7
+11-21 22:01:13.802 E/        (  895): remove_unfreezing, pid=20006
+11-21 22:01:13.802 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20006, num=30
+11-21 22:01:13.803 E/        (  895): remove_unfreezing, pid=20031
+11-21 22:01:13.803 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=20031, num=25
+11-21 22:01:13.810 E/        (  895): remove_unfreezing, pid=19833
+11-21 22:01:13.810 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=19833, num=5
+--------- beginning of main
+11-21 22:01:16.469 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.472 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.476 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.478 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.481 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.488 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.500 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.511 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.568 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.587 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.588 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.592 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.592 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.600 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:16.617 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.617 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.618 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.621 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.624 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.633 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.635 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.637 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.639 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.666 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.667 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.667 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.668 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.670 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.671 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.673 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.675 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.686 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.687 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.722 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.722 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.723 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.867 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.868 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.869 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.870 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.871 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.894 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.895 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.896 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.897 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.968 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.971 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.975 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.980 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.983 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:16.984 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.088 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.091 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.095 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.160 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.211 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.212 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.214 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.216 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.219 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.226 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.227 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.228 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.230 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.232 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.248 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.303 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:17.327 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.344 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.344 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.345 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.346 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.346 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.390 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:17.393 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.413 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:17.424 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.435 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:17.458 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=14, list=0x40C00000 0x2 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x3E8 0x40800000 0x3E8 
+11-21 22:01:17.481 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=26, list=0x40C00000 0x1 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x7D0 0x40800000 0x9C4 0x40804100 0x7D0 0x40804000 0x9C4 0x40C20000 0x28 0x40C1C000 0x3C 0x40400000 0x1 0x42C10000 0x1 
+11-21 22:01:17.487 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.511 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.535 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.589 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.589 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.590 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.592 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.603 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.604 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.604 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.605 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.636 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.637 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.638 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.638 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.639 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.640 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.649 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.683 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.683 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.717 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:17.752 E/ProcessManagerService( 2908): [new] update resume package:[com.yonghui.freshdelivery]
+11-21 22:01:17.755 E/NeoSafe ( 2908): update resume package:[com.yonghui.freshdelivery]
+11-21 22:01:18.032 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.034 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.035 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.038 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.069 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.096 E/canna-debug(18204): showKeyboardWithHKB -- 0
+11-21 22:01:18.124 E/NeoSafe ( 2908): update resume package:[com.yonghui.freshdelivery]
+11-21 22:01:18.129 E/ProcessManagerService( 2908): [new] update resume package:[com.yonghui.freshdelivery]
+11-21 22:01:18.212 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=1351, client_tid=2165, inupt handle=0, duration=0 ms, num_args=26, list=0x40C00000 0x1 0x41000100 0x4 0x41000000 0x4 0x41004100 0x4 0x41004000 0x4 0x40800100 0x7D0 0x40800000 0x9C4 0x40804100 0x7D0 0x40804000 0x9C4 0x40C20000 0x28 0x40C1C000 0x3C 0x40400000 0x1 0x42C10000 0x1 
+11-21 22:01:19.670 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:20.951 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:21.889 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:22.877 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:24.027 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:32.075 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:01:32.076 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:01:32.956 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:33.912 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:01:33.912 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:01:35.046 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:35.666 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:01:35.666 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:01:35.897 E/NetworkController.MobileSignalController(2)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:01:36.755 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:43.070 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:43.941 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:45.043 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:46.657 E/IPCThreadState(20255): set_thread_freeze_state, freeze=1, pid=20255, num=13
+11-21 22:01:46.657 E/IPCThreadState(20031): set_thread_freeze_state, freeze=1, pid=20031, num=33
+11-21 22:01:46.658 E/IPCThreadState(19822): set_thread_freeze_state, freeze=1, pid=19822, num=38
+11-21 22:01:46.658 E/IPCThreadState(20006): set_thread_freeze_state, freeze=1, pid=20006, num=38
+11-21 22:01:53.068 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:53.525 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:01:53.525 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:01:54.008 E/dmapp   (  847): dmapp is still alive.
+11-21 22:01:54.399 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:01:59.032 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 22:02:00.879 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:03.364 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:02:03.364 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:02:04.495 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:02:04.495 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:02:06.093 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:08.826 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:02:08.826 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:02:09.568 E/NeoSafe ( 2908): [PM] real is low mode :false
+11-21 22:02:09.570 E/NeoSafe ( 2908): 1:900000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 2:300000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 3:600000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 4:900000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 5:3600000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 6:2048
+11-21 22:02:09.570 E/NeoSafe ( 2908): 7:14400000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 8:1800000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 9:3
+11-21 22:02:09.570 E/NeoSafe ( 2908): 10:50
+11-21 22:02:09.570 E/NeoSafe ( 2908): 11:7200000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 12:3600000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 13:1800000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 14:60000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 15:86400000
+11-21 22:02:09.570 E/NeoSafe ( 2908): 16:2097152
+11-21 22:02:09.570 E/NeoSafe ( 2908): 17:900000
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.yonghui.freshdelivery rank = 1
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.sina.news rank = 7
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.sina.weibo rank = 8
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.tencent.mm rank = 4
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.hunantv.imgo.activity rank = 6
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.google.android.apps.authenticator2 rank = 2
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:com.pumpkinstudy.kind rank = 3
+11-21 22:02:09.613 E/NeoSafe ( 2908): [PM] pkg:io.appium.settings rank = 5
+11-21 22:02:09.614 E/NeoSafe ( 2908): [PM] has window uid:[10931, 10012]
+11-21 22:02:09.614 E/NeoSafe ( 2908): [PM] ignore visible app :com.yonghui.freshdelivery/13495
+11-21 22:02:09.632 E/NeoSafe ( 2908): NetworkTracker$update()
+11-21 22:02:09.692 E/NeoSafe ( 2908): [PM] native memory {}
+11-21 22:02:09.697 E/NeoSafe ( 2908): [PM] NetworkTracker com.sina.weibo:remote, app byte(kb):0
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.sina.weibo, app byte(kb):0
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.ss.android.ugc.aweme, app byte(kb):51
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.ss.android.ugc.aweme:push, app byte(kb):51
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.ss.android.ugc.aweme:pushservice, app byte(kb):51
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.eg.android.AlipayGphone:push, app byte(kb):0
+11-21 22:02:09.698 E/NeoSafe ( 2908): [PM] NetworkTracker com.eg.android.AlipayGphone, app byte(kb):0
+11-21 22:02:09.699 E/NeoSafe ( 2908): [PM] NetworkTracker com.android.webview:sandboxed_process0, app byte(kb):3
+11-21 22:02:09.699 E/NeoSafe ( 2908): [PM] app pid: 20255, process name: com.android.webview:sandboxed_process0 isNotBusyInNetwork
+11-21 22:02:09.700 E/NeoSafe ( 2908): [PM] NetworkTracker com.netease.cloudmusic, app byte(kb):3
+11-21 22:02:09.700 E/NeoSafe ( 2908): [PM] app pid: 19822, process name: com.netease.cloudmusic isNotBusyInNetwork
+11-21 22:02:09.700 E/NeoSafe ( 2908): [PM] NetworkTracker com.netease.cloudmusic:play, app byte(kb):3
+11-21 22:02:09.700 E/NeoSafe ( 2908): [PM] app pid: 20031, process name: com.netease.cloudmusic:play isNotBusyInNetwork
+11-21 22:02:09.701 E/NeoSafe ( 2908): [PM] NetworkTracker com.netease.cloudmusic:cmMP1, app byte(kb):3
+11-21 22:02:09.701 E/NeoSafe ( 2908): [PM] app pid: 20006, process name: com.netease.cloudmusic:cmMP1 isNotBusyInNetwork
+11-21 22:02:09.701 E/NeoSafe ( 2908): [PM] NetworkTracker com.hpbr.bosszhipin, app byte(kb):4
+11-21 22:02:09.701 E/NeoSafe ( 2908): [PM] app pid: 19860, process name: com.hpbr.bosszhipin isNotBusyInNetwork
+11-21 22:02:09.702 E/NeoSafe ( 2908): [PM] NetworkTracker com.zxscnew, app byte(kb):1
+11-21 22:02:09.702 E/NeoSafe ( 2908): [PM] app pid: 19833, process name: com.zxscnew isNotBusyInNetwork
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: cn.nubia.mms
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.netease.cloudmusic
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.eg.android.AlipayGphone
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: cn.nubia.browser
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.zxscnew
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: kuaidu.xiaoshuo.yueduqi
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.ss.android.ugc.aweme
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.hpbr.bosszhipin
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.sina.weibo
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM] warmStartApp: com.tencent.mm
+11-21 22:02:09.703 E/NeoSafe ( 2908): [PM]screen on uid:[]
+11-21 22:02:09.791 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:11.092 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:12.111 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:13.114 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:14.101 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:15.120 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:16.107 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:17.044 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:18.113 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:22.125 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:23.062 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:24.131 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:26.137 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:27.092 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:28.128 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:35.149 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:36.136 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:37.156 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:38.159 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:43.174 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:44.178 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:46.488 E/NetworkController.MobileSignalController(3)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:02:47.352 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:52.540 E/NetworkController.MobileSignalController(3)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:02:53.524 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:02:53.524 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:02:54.407 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:02:59.033 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 22:03:00.870 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:02.234 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:03.205 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:04.240 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:05.227 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:06.230 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:07.233 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:08.236 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:09.240 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:09.714 E/NeoSafe ( 2908): [PM] skip music process:
+11-21 22:03:09.714 E/NeoSafe ( 2908): [PM] kill consume app: 
+11-21 22:03:09.714 E/NeoSafe ( 2908): [PM] kill app:com.zxscnew/[com.yonghui.freshdelivery];
+11-21 22:03:09.721 E/NeoSafe ( 2908): [PM] invalid daemon pid:-1
+11-21 22:03:09.721 E/NeoSafe ( 2908): [PM] has no high memory proc
+11-21 22:03:09.772 E/IPCThreadState( 5176): set_thread_freeze_state, freeze=0, pid=5176, num=85
+11-21 22:03:09.772 E/IPCThreadState( 5176): remove_unfreezing, pid=5176
+11-21 22:03:09.776 E/CardEmulation( 3067): AID 2PAY.SYS.DDF01 is not a valid AID.
+11-21 22:03:09.776 E/ApduServiceInfo( 3067): Ignoring invalid or duplicate aid: 2PAY.SYS.DDF01
+11-21 22:03:09.782 E/RegisteredServicesCache( 3067): Skipping application component ComponentInfo{com.taobao.taobao/com.alibaba.ariver.commonability.device.jsapi.nfc.service.TinyAppHostApduService}: it must request the permission android.permission.NFC
+11-21 22:03:09.783 E/RegisteredServicesCache( 3067): Skipping APDU service ComponentInfo{com.yitong.mbank.psbc/cc.rengu.sdk.hce.service.CardService}: it does not require the permission android.permission.BIND_NFC_SERVICE
+11-21 22:03:09.784 E/RegisteredServicesCache( 3067): Skipping application component ComponentInfo{me.ele/com.alibaba.ariver.commonability.device.jsapi.nfc.service.TinyAppHostApduService}: it must request the permission android.permission.NFC
+11-21 22:03:09.882 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:03:09.882 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:03:11.246 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:11.823 E/        (  895): remove_unfreezing, pid=6483
+11-21 22:03:11.823 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6483, num=29
+11-21 22:03:11.824 E/        (  895): remove_unfreezing, pid=6109
+11-21 22:03:11.824 E/        (  895): freezerd, set_thread_freeze_state, freeze=0, pid=6109, num=22
+11-21 22:03:11.844 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:03:11.844 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:03:13.236 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:14.255 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:16.261 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:18.860 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:03:18.860 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:03:19.359 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:03:19.359 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:03:20.275 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:21.277 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:21.340 E/NetworkController.MobileSignalController(2)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:03:22.198 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:31.310 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:32.312 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:34.008 E/dmapp   (  847): dmapp is still alive.
+11-21 22:03:38.773 E/NetworkController.MobileSignalController(2)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:03:39.631 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:43.348 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:44.350 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:53.378 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:53.522 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:03:53.522 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:03:54.414 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:55.935 E/NetworkController.MobileSignalController(3)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:03:57.391 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:58.394 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:03:59.034 E/storaged(  943): getDiskStats failed with result NOT_SUPPORTED and size 0
+11-21 22:04:00.861 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:02.665 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:04:02.665 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:04:02.677 E/NeoSafe ( 2908): [PMC] mReceiver level = 100
+11-21 22:04:02.677 E/NeoSafe ( 2908): [PMC] report same level:100
+11-21 22:04:04.413 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:05.014 E/NetworkController.MobileSignalController(3)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:04:05.876 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:08.700 E/NetworkController.MobileSignalController(2)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:04:09.758 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:11.063 E/NetworkController.MobileSignalController(3)( 2196): dataDisabled = falseuserSetup =truedataConnected =falseisDefault = false
+11-21 22:04:12.438 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:13.442 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:14.444 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
+11-21 22:04:15.448 E/ANDR-PERF-MPCTL(  744): perf_lock_acq: client_pid=727, client_tid=727, inupt handle=0, duration=0 ms, num_args=1, list=0x4501 
